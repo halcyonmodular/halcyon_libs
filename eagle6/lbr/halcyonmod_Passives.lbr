@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1860,6 +1860,224 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <text x="0" y="1.143" size="0.8128" layer="25" align="bottom-center">&gt;Name</text>
 <text x="0" y="-1.143" size="0.8128" layer="27" align="top-center">&gt;Value</text>
 </package>
+<package name="JMP-3-NO">
+<description>&lt;B&gt;Three Terminal Jumper - Normally Open&lt;/B&gt;
+&lt;BR&gt;
+Positions 1, 2, and 3 are normally NOT connected.
+&lt;P&gt;
+PatternAgents ProtoPads Library
+&lt;P&gt;
+Schematic and PCB layout libraries for design patterns by PatternAgents.
+&lt;BR&gt;
+For the CADSoft Eagle CAD program : http://www.cadsoftusa.com/download-eagle/
+&lt;P&gt;
+Source LBR : http://www.patternagents.com
+&lt;BR&gt;
+Github : https://github.com/PatternAgents
+&lt;BR&gt;
+License : http://creativecommons.org/licenses/by-sa/4.0/ 
+(Creative Commons 4.0)
+&lt;P&gt;
+THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+&lt;P&gt;</description>
+<wire x1="1.27" y1="1.016" x2="1.524" y2="0.762" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1.524" y1="0.762" x2="-1.27" y2="1.016" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1.524" y1="-0.762" x2="-1.27" y2="-1.016" width="0.2032" layer="21" curve="90"/>
+<wire x1="1.27" y1="-1.016" x2="1.524" y2="-0.762" width="0.2032" layer="21" curve="90"/>
+<wire x1="1.524" y1="-0.762" x2="1.524" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="-1.524" y1="-0.762" x2="-1.524" y2="0.762" width="0.2032" layer="21"/>
+<smd name="1" x="-0.8128" y="0" dx="0.508" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0" y="0" dx="0.508" dy="1.27" layer="1" cream="no"/>
+<smd name="3" x="0.8128" y="0" dx="0.508" dy="1.27" layer="1" cream="no"/>
+<text x="-1.27" y="1.27" size="0.6096" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-1.27" y="-1.905" size="0.6096" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<wire x1="-1.27" y1="1.016" x2="-1.143" y2="1.016" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-1.016" x2="-1.143" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="1.016" x2="-0.508" y2="1.016" width="0.2032" layer="21"/>
+<wire x1="1.143" y1="-1.016" x2="-0.508" y2="-1.016" width="0.2032" layer="21"/>
+<text x="-1.143" y="-0.381" size="0.8128" layer="51" font="vector" ratio="15">1</text>
+<text x="-0.254" y="-0.381" size="0.8128" layer="51" font="vector" ratio="15">2</text>
+<text x="0.508" y="-0.381" size="0.8128" layer="51" font="vector" ratio="15">3</text>
+</package>
+<package name="JMP-3-NO-0402">
+<description>&lt;B&gt;Three Terminal Jumper - Normally Open&lt;/B&gt;
+&lt;BR&gt;
+Positions 1, 2, and 3 are normally NOT connected.
+&lt;P&gt;
+PatternAgents ProtoPads Library
+&lt;P&gt;
+Schematic and PCB layout libraries for design patterns by PatternAgents.
+&lt;BR&gt;
+For the CADSoft Eagle CAD program : http://www.cadsoftusa.com/download-eagle/
+&lt;P&gt;
+Source LBR : http://www.patternagents.com
+&lt;BR&gt;
+Github : https://github.com/PatternAgents
+&lt;BR&gt;
+License : http://creativecommons.org/licenses/by-sa/4.0/ 
+(Creative Commons 4.0)
+&lt;P&gt;
+THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+&lt;P&gt;</description>
+<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1" cream="no"/>
+<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1" cream="no"/>
+<text x="-1.27" y="0.889" size="0.6096" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-1.397" y="-1.524" size="0.6096" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<wire x1="-0.254" y1="0.635" x2="-1.143" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-1.143" y1="0.635" x2="-1.143" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-1.143" y1="-0.635" x2="-0.254" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="0.254" y1="0.635" x2="2.54" y2="0.635" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="0.254" y2="-0.635" width="0.127" layer="21"/>
+<smd name="3" x="2.017" y="0" dx="0.7" dy="0.9" layer="1" cream="no"/>
+<text x="-0.889" y="-0.254" size="0.6096" layer="51" font="vector" ratio="15">1</text>
+<text x="0.381" y="-0.254" size="0.6096" layer="51" font="vector" ratio="15">2</text>
+<text x="1.778" y="-0.254" size="0.6096" layer="51" font="vector" ratio="15">3</text>
+<wire x1="-0.254" y1="0.635" x2="-1.143" y2="0.635" width="0.127" layer="21"/>
+</package>
+<package name="JMP-3-NO-0603">
+<description>&lt;B&gt;Three Terminal Jumper - Normally Open&lt;/B&gt;
+&lt;BR&gt;
+Positions 1, 2, and 3 are normally NOT connected.
+&lt;P&gt;
+PatternAgents ProtoPads Library
+&lt;P&gt;
+Schematic and PCB layout libraries for design patterns by PatternAgents.
+&lt;BR&gt;
+For the CADSoft Eagle CAD program : http://www.cadsoftusa.com/download-eagle/
+&lt;P&gt;
+Source LBR : http://www.patternagents.com
+&lt;BR&gt;
+Github : https://github.com/PatternAgents
+&lt;BR&gt;
+License : http://creativecommons.org/licenses/by-sa/4.0/ 
+(Creative Commons 4.0)
+&lt;P&gt;
+THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+&lt;P&gt;</description>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1" cream="no"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1" cream="no"/>
+<text x="-1.27" y="0.889" size="0.6096" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-1.524" y="-1.524" size="0.6096" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<wire x1="-0.381" y1="0.762" x2="-1.651" y2="0.762" width="0.127" layer="21"/>
+<wire x1="-1.651" y1="0.762" x2="-1.651" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-1.651" y1="-0.762" x2="-0.381" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="0.254" y1="0.762" x2="3.175" y2="0.762" width="0.127" layer="21"/>
+<wire x1="3.175" y1="0.762" x2="3.175" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-0.762" x2="0.254" y2="-0.762" width="0.127" layer="21"/>
+<smd name="3" x="2.452" y="0" dx="1.1" dy="1" layer="1" cream="no"/>
+<text x="-1.016" y="-0.254" size="0.6096" layer="51" font="vector" ratio="15">1</text>
+<text x="0.635" y="-0.254" size="0.6096" layer="51" font="vector" ratio="15">2</text>
+<text x="2.159" y="-0.254" size="0.6096" layer="51" font="vector" ratio="15">3</text>
+</package>
+<package name="JMP-3-NO-0805">
+<description>&lt;B&gt;Three Terminal Jumper - Normally Open&lt;/B&gt;
+&lt;BR&gt;
+Positions 1, 2, and 3 are normally NOT connected.
+&lt;P&gt;
+PatternAgents ProtoPads Library
+&lt;P&gt;
+Schematic and PCB layout libraries for design patterns by PatternAgents.
+&lt;BR&gt;
+For the CADSoft Eagle CAD program : http://www.cadsoftusa.com/download-eagle/
+&lt;P&gt;
+Source LBR : http://www.patternagents.com
+&lt;BR&gt;
+Github : https://github.com/PatternAgents
+&lt;BR&gt;
+License : http://creativecommons.org/licenses/by-sa/4.0/ 
+(Creative Commons 4.0)
+&lt;P&gt;
+THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+&lt;P&gt;</description>
+<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1" cream="no"/>
+<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1" cream="no"/>
+<text x="-1.27" y="1.0795" size="0.6096" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-1.397" y="-1.651" size="0.6096" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<wire x1="-1.016" y1="0.889" x2="-1.524" y2="0.889" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="0.889" x2="-1.524" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="-0.889" x2="-1.016" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="0.508" y1="0.889" x2="3.302" y2="0.889" width="0.127" layer="21"/>
+<wire x1="3.302" y1="0.889" x2="3.302" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="3.302" y1="-0.889" x2="0.508" y2="-0.889" width="0.127" layer="21"/>
+<smd name="3" x="2.656" y="0" dx="0.8" dy="1.2" layer="1" cream="no"/>
+<text x="-1.143" y="-0.254" size="0.6096" layer="51" font="vector" ratio="15">1</text>
+<text x="0.635" y="-0.254" size="0.6096" layer="51" font="vector" ratio="15">2</text>
+<text x="2.413" y="-0.254" size="0.6096" layer="51" font="vector" ratio="15">3</text>
+</package>
+<package name="JMP-3-NO-PTH-2.54">
+<description>&lt;B&gt;Three Terminal Jumper - Normally Open&lt;/B&gt;
+&lt;BR&gt;
+Positions 1, 2, and 3 are normally NOT connected.
+&lt;P&gt;
+PatternAgents ProtoPads Library
+&lt;P&gt;
+Schematic and PCB layout libraries for design patterns by PatternAgents.
+&lt;BR&gt;
+For the CADSoft Eagle CAD program : http://www.cadsoftusa.com/download-eagle/
+&lt;P&gt;
+Source LBR : http://www.patternagents.com
+&lt;BR&gt;
+Github : https://github.com/PatternAgents
+&lt;BR&gt;
+License : http://creativecommons.org/licenses/by-sa/4.0/ 
+(Creative Commons 4.0)
+&lt;P&gt;
+THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+&lt;P&gt;</description>
+<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.016" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.016" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<text x="-0.7112" y="1.5748" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-0.762" y="-2.794" size="1.27" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<text x="-0.889" y="-0.381" size="0.8128" layer="51" font="vector" ratio="15">1</text>
+<text x="1.651" y="-0.381" size="0.8128" layer="51" font="vector" ratio="15">2</text>
+<text x="4.191" y="-0.381" size="0.8128" layer="51" font="vector" ratio="15">3</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -1958,6 +2176,43 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 <text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
 <pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="JMP-3-NO">
+<description>&lt;B&gt;Two Way Jumper - Normally Open&lt;/B&gt;
+&lt;BR&gt;
+Positions 1, 2 and 3 are normally NOT connected.
+&lt;P&gt;
+PatternAgents ProtoPads Library
+&lt;P&gt;
+Schematic and PCB layout libraries for design patterns by PatternAgents.
+&lt;BR&gt;
+For the CADSoft Eagle CAD program : http://www.cadsoftusa.com/download-eagle/
+&lt;P&gt;
+Source LBR : http://www.patternagents.com
+&lt;BR&gt;
+Github : https://github.com/PatternAgents
+&lt;BR&gt;
+License : http://creativecommons.org/licenses/by-sa/4.0/ 
+(Creative Commons 4.0)
+&lt;P&gt;
+THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+&lt;P&gt;</description>
+<wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="-0.254" y1="1.524" x2="0.254" y2="1.524" width="0.508" layer="94" curve="-180" cap="flat"/>
+<wire x1="-0.254" y1="-1.016" x2="0.254" y2="-1.016" width="0.508" layer="94" curve="-180" cap="flat"/>
+<wire x1="0.254" y1="1.016" x2="-0.254" y2="1.016" width="0.508" layer="94" curve="-180" cap="flat"/>
+<wire x1="0.254" y1="-1.524" x2="-0.254" y2="-1.524" width="0.508" layer="94" curve="-180" cap="flat"/>
+<text x="2.54" y="1.27" size="1.778" layer="95">&gt;NAME</text>
+<pin name="2" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="0" y="2.54" visible="off" length="point" direction="pas" rot="R270"/>
+<pin name="3" x="0" y="-2.54" visible="off" length="point" direction="pas" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2650,6 +2905,95 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JMP-3-NO" prefix="JMP" uservalue="yes">
+<description>&lt;B&gt;Three Terminal Jumper - Normally Open&lt;/B&gt;
+&lt;BR&gt;
+All Pads Open (unconnected)
+&lt;P&gt;
+PatternAgents ProtoPads Library
+&lt;P&gt;
+Schematic and PCB layout libraries for design patterns by PatternAgents.
+&lt;BR&gt;
+For the CADSoft Eagle CAD program : http://www.cadsoftusa.com/download-eagle/
+&lt;P&gt;
+Source LBR : http://www.patternagents.com
+&lt;BR&gt;
+Github : https://github.com/PatternAgents
+&lt;BR&gt;
+License : http://creativecommons.org/licenses/by-sa/4.0/ 
+(Creative Commons 4.0)
+&lt;P&gt;
+THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+&lt;P&gt;</description>
+<gates>
+<gate name="JMP" symbol="JMP-3-NO" x="0" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="JMP-3-NO">
+<connects>
+<connect gate="JMP" pin="1" pad="1"/>
+<connect gate="JMP" pin="2" pad="2"/>
+<connect gate="JMP" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402" package="JMP-3-NO-0402">
+<connects>
+<connect gate="JMP" pin="1" pad="1"/>
+<connect gate="JMP" pin="2" pad="2"/>
+<connect gate="JMP" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603" package="JMP-3-NO-0603">
+<connects>
+<connect gate="JMP" pin="1" pad="1"/>
+<connect gate="JMP" pin="2" pad="2"/>
+<connect gate="JMP" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0805" package="JMP-3-NO-0805">
+<connects>
+<connect gate="JMP" pin="1" pad="1"/>
+<connect gate="JMP" pin="2" pad="2"/>
+<connect gate="JMP" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-PTH" package="JMP-3-NO-PTH-2.54">
+<connects>
+<connect gate="JMP" pin="1" pad="1"/>
+<connect gate="JMP" pin="2" pad="2"/>
+<connect gate="JMP" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
