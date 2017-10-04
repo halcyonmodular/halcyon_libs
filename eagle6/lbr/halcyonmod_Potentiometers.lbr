@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mil"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -54,6 +54,9 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCopper" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -79,6 +82,7 @@
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -87,6 +91,7 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
@@ -96,6 +101,7 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
+<layer number="190" name="Faceplate-Hole" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
@@ -129,10 +135,13 @@
 <layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="no" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="253" name="Extra" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
@@ -786,6 +795,138 @@ source : http://www.bourns.com/docs/Product-Datasheets/PTD90.pdf</description>
 <hole x="6.65" y="-7.75" drill="1.4224"/>
 <hole x="-6.65" y="-7.75" drill="1.4224"/>
 </package>
+<package name="BOURNS-PV36W">
+<pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
+<pad name="3" x="0" y="-2.54" drill="1" diameter="1.8796"/>
+<pad name="1" x="0" y="2.54" drill="1" diameter="1.8796"/>
+<wire x1="-2.286" y1="-4.318" x2="-2.286" y2="4.572" width="0.4064" layer="21"/>
+<wire x1="-2.286" y1="4.572" x2="2.54" y2="4.572" width="0.4064" layer="21"/>
+<wire x1="2.54" y1="4.572" x2="2.54" y2="-4.318" width="0.4064" layer="21"/>
+<wire x1="2.54" y1="-4.318" x2="-2.286" y2="-4.318" width="0.4064" layer="21"/>
+<text x="-1.778" y="5.08" size="0.8128" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.524" y="-5.588" size="0.8128" layer="25" font="vector" ratio="20">&gt;VALUE</text>
+<text x="1.524" y="2.54" size="0.8128" layer="21" font="vector" ratio="20">1</text>
+<text x="1.524" y="0" size="0.8128" layer="21" font="vector" ratio="20">2</text>
+<text x="1.524" y="-2.54" size="0.8128" layer="21" font="vector" ratio="20">3</text>
+<circle x="-1.524" y="3.81" radius="0.359209375" width="0.127" layer="21"/>
+</package>
+<package name="SLIDEPOT-45">
+<wire x1="-22.5" y1="4.5" x2="22.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="22.5" y1="4.5" x2="22.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="22.5" y1="-4.5" x2="-22.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-22.5" y1="-4.5" x2="-22.5" y2="4.5" width="0.127" layer="21"/>
+<circle x="-20.5" y="0" radius="1" width="0.127" layer="21"/>
+<circle x="20.5" y="0" radius="1" width="0.127" layer="21"/>
+<wire x1="-18.5" y1="1.5" x2="18.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="18.5" y1="1.5" x2="18.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="18.5" y1="-1.5" x2="-18.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-18.5" y1="-1.5" x2="-18.5" y2="1.5" width="0.127" layer="21"/>
+<pad name="P$1" x="-16.4" y="4.2" drill="1.7" diameter="2.54"/>
+<pad name="P$2" x="16.4" y="4.2" drill="1.7" diameter="2.54"/>
+<pad name="P$3" x="-17.6" y="-4.2" drill="1.7" diameter="2.54"/>
+<pad name="P$4" x="17.6" y="-4.2" drill="1.7" diameter="2.54"/>
+<pad name="C" x="21.75" y="1.75" drill="1.2" diameter="2.1844"/>
+<pad name="A" x="-21.75" y="1.75" drill="1.2" diameter="2.1844"/>
+<pad name="B" x="-21.75" y="-1.75" drill="1.2" diameter="2.1844"/>
+<text x="-2.5" y="5" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-3" y="-6.5" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<text x="-2" y="-0.5" size="1.27" layer="21" font="vector">45MM</text>
+</package>
+<package name="16MM-RV16AF-4A">
+<wire x1="-7" y1="-4.127" x2="-7" y2="-9.91189375" width="0.127" layer="21"/>
+<wire x1="-7" y1="-9.91189375" x2="-6.54689375" y2="-10.365" width="0.127" layer="21" curve="90"/>
+<wire x1="-6.54689375" y1="-10.365" x2="6.41989375" y2="-10.365" width="0.127" layer="21"/>
+<wire x1="6.41989375" y1="-10.365" x2="7" y2="-9.78489375" width="0.127" layer="21" curve="90"/>
+<wire x1="7" y1="-9.78489375" x2="7" y2="-4.127" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="3.4" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="8.128" width="0.127" layer="21"/>
+<pad name="1" x="-5" y="-12.954" drill="1.2" diameter="2.286" rot="R90"/>
+<pad name="2" x="0" y="-12.954" drill="1.2" diameter="2.286" rot="R90"/>
+<pad name="3" x="5" y="-12.954" drill="1.2" diameter="2.286" rot="R90"/>
+<text x="2.913" y="-8.551" size="1.27" layer="25" font="vector" ratio="12" rot="R180">&gt;NAME</text>
+<text x="3.04" y="-5.529" size="1.27" layer="27" font="vector" ratio="12" rot="R180">&gt;VALUE</text>
+<circle x="0" y="0" radius="4" width="0.127" layer="21"/>
+<wire x1="-2.738" y1="1.905" x2="2.738" y2="1.905" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="3.6195" width="0.0254" layer="190"/>
+</package>
+<package name="POT-9MM-SONGHUEI">
+<wire x1="4.854" y1="-4.9901" x2="4.854" y2="4.9901" width="0.127" layer="21"/>
+<wire x1="4.854" y1="4.9901" x2="4.0901" y2="5.5" width="0.127" layer="21" curve="90"/>
+<wire x1="4.0901" y1="5.5" x2="-4.0901" y2="5.5" width="0.127" layer="21"/>
+<wire x1="-4.0901" y1="5.5" x2="-4.854" y2="4.9901" width="0.127" layer="21" curve="90"/>
+<wire x1="-4.854" y1="4.9901" x2="-4.854" y2="-4.9901" width="0.127" layer="21"/>
+<wire x1="-4.854" y1="-4.9901" x2="-4.0901" y2="-5.5" width="0.127" layer="21" curve="90"/>
+<wire x1="-4.0901" y1="-5.5" x2="4.0901" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="4.0901" y1="-5.5" x2="4.854" y2="-4.9901" width="0.127" layer="21" curve="90"/>
+<circle x="0" y="0" radius="3" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="3.5" width="0.127" layer="21"/>
+<pad name="3" x="2.54" y="-7.0104" drill="0.889" diameter="1.8034" rot="R90"/>
+<pad name="2" x="0" y="-7.0104" drill="0.889" diameter="1.8034" rot="R90"/>
+<pad name="1" x="-2.54" y="-7.0104" drill="0.889" diameter="1.8034" rot="R90"/>
+<pad name="P$4" x="-4.3942" y="0" drill="2.0574" diameter="2.667"/>
+<pad name="P$5" x="4.3942" y="0" drill="2.0574" diameter="2.667"/>
+<text x="-3.81" y="3.81" size="1.27" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="-3.81" y="-4.9784" size="1.27" layer="27" font="vector" ratio="12">&gt;VALUE</text>
+<polygon width="0.127" layer="41">
+<vertex x="-4.6482" y="2.8194"/>
+<vertex x="-4.1402" y="2.8194"/>
+<vertex x="-4.1402" y="-2.8194"/>
+<vertex x="-4.6482" y="-2.8194"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="4.1402" y="2.8194"/>
+<vertex x="4.6482" y="2.8194"/>
+<vertex x="4.6482" y="-2.8194"/>
+<vertex x="4.1402" y="-2.8194"/>
+</polygon>
+<polygon width="0.127" layer="43">
+<vertex x="-4.6482" y="2.8194"/>
+<vertex x="-4.1402" y="2.8194"/>
+<vertex x="-4.1402" y="-2.8194"/>
+<vertex x="-4.6482" y="-2.8194"/>
+</polygon>
+<polygon width="0.127" layer="43">
+<vertex x="4.1402" y="2.8194"/>
+<vertex x="4.6482" y="2.8194"/>
+<vertex x="4.6482" y="-2.8194"/>
+<vertex x="4.1402" y="-2.8194"/>
+</polygon>
+</package>
+<package name="POT-SLIDER-ALPHA-RA2045F-20">
+<pad name="P$NC" x="-15" y="-1.25" drill="1.1" diameter="1.778"/>
+<pad name="P$1" x="-15" y="1.25" drill="1.1" diameter="1.778"/>
+<pad name="P$LEDC" x="-15" y="-3.75" drill="1.1" diameter="1.778"/>
+<pad name="P$2" x="-15" y="3.75" drill="1.1" diameter="1.778"/>
+<pad name="P$3" x="15" y="1.25" drill="1.1" diameter="1.778"/>
+<pad name="P$LEDA" x="15" y="-3.75" drill="1.1" diameter="1.778"/>
+<wire x1="-17.5" y1="4.5" x2="-17.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-17.5" y1="-4.5" x2="17.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="17.5" y1="-4.5" x2="17.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="17.5" y1="4.5" x2="-17.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-10" y1="0" x2="10" y2="0" width="0.127" layer="21"/>
+</package>
+<package name="TRIM-T73YE">
+<wire x1="-3.3" y1="-3.8" x2="-1.8" y2="-3.8" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="1" width="0.127" layer="21"/>
+<pad name="2" x="0" y="2.54" drill="0.508" diameter="1.016"/>
+<pad name="1" x="-2.54" y="0" drill="0.508" diameter="1.016"/>
+<pad name="3" x="2.54" y="0" drill="0.508" diameter="1.016"/>
+<text x="-3.81" y="3.81" size="1.27" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="-3.81" y="-5.08" size="1.27" layer="27" font="vector" ratio="12">&gt;VALUE</text>
+<wire x1="3.3" y1="-3.8" x2="3.3" y2="3.2" width="0.127" layer="21"/>
+<wire x1="3.3" y1="3.2" x2="-3.3" y2="3.2" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="3.2" x2="-3.3" y2="-3.8" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.9" x2="0" y2="0.9" width="0.127" layer="21"/>
+<wire x1="0" y1="0.9" x2="-0.2" y2="0.7" width="0.127" layer="21"/>
+<wire x1="0" y1="0.9" x2="0.2" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-1" y1="0" x2="-1.3" y2="0" width="0.127" layer="21"/>
+<wire x1="1.1" y1="0" x2="1.3" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="1.1" x2="0" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-1.8" y1="-3.8" x2="-1.8" y2="-3.4" width="0.127" layer="21"/>
+<wire x1="-1.8" y1="-3.4" x2="1.8" y2="-3.4" width="0.127" layer="21"/>
+<wire x1="1.8" y1="-3.4" x2="1.8" y2="-3.8" width="0.127" layer="21"/>
+<wire x1="1.8" y1="-3.8" x2="3.3" y2="-3.8" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="POT">
@@ -1184,6 +1325,16 @@ source : http://www.bourns.com/docs/Product-Datasheets/PTD90.pdf</description>
 </technologies>
 </device>
 <device name="-PTD901" package="POT-BOURNS-PTD901">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-PV36W" package="BOURNS-PV36W">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
